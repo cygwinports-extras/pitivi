@@ -1,0 +1,11 @@
+--- origsrc/pitivi-0.13.3/Makefile.am	2009-09-06 05:41:49.000000000 -0500
++++ src/pitivi-0.13.3/Makefile.am	2009-11-03 22:05:52.083429600 -0600
+@@ -41,7 +41,7 @@ EXTRA_DIST +=                   \
+ 
+ locale-uninstalled:
+ 	if test -d po; then \
+-	    $(MAKE) -C po datadir=../$(top_builddir) install; \
++	    $(MAKE) -C po datadir=../$(top_builddir) DESTDIR="" install; \
+ 	fi
+ 
+ locale-uninstalled-clean:
