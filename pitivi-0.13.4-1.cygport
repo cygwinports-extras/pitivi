@@ -3,8 +3,7 @@ inherit gstreamer gnome.org
 DESCRIPTION="GStreamer-based video editor"
 HOMEPAGE="http://www.pitivi.org/"
 
-PATCH_URI="0.13.3-no-v4l.patch
-           0.13.3-po-destdir.patch"
+PATCH_URI="0.13.3-po-destdir.patch"
 
 src_compile() {
 	cd ${S}
