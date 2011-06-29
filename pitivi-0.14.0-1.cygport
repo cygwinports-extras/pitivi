@@ -5,6 +5,8 @@ HOMEPAGE="http://www.pitivi.org/"
 
 PATCH_URI="0.13.3-po-destdir.patch"
 
+DIFF_EXCLUDES="autoregen.sh configure.py"
+
 src_compile() {
 	cd ${S}
 	gstreamer_autoreconf
@@ -12,6 +14,3 @@ src_compile() {
 	cygconf
 	cygmake
 }
-
-
-

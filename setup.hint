@@ -1,5 +1,5 @@
 category: Video
-requires: python python-cairo python-dbus python-gconf2 python-gobject2.0 python-goocanvas python-gst0.10 python-gtk2.0 python-twisted python-zope.interface
+requires: python python-cairo python-dbus python-gconf2 python-gobject2.0 python-goocanvas python-gst0.10 python-gtk2.0 python-twisted python-xdg python-zope.interface
 sdesc: "GStreamer-based video editor"
 ldesc: "PiTiVi is a free and open source video editor based on the 
 GStreamer multimedia framework."
