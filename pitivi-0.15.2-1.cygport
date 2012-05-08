@@ -1,4 +1,4 @@
-inherit gstreamer gnome.org
+inherit gnome2
 
 DESCRIPTION="GStreamer-based video editor"
 HOMEPAGE="http://www.pitivi.org/"
@@ -7,10 +7,4 @@ PATCH_URI="0.13.3-po-destdir.patch"
 
 DIFF_EXCLUDES="autoregen.sh configure.py"
 
-src_compile() {
-	cd ${S}
-	gstreamer_autoreconf
-	cd ${B}
-	cygconf
-	cygmake
-}
+ACLOCAL_FLAGS="-I common/m4"
