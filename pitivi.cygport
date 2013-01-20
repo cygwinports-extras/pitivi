@@ -1,0 +1,18 @@
+inherit gnome2 python
+
+NAME="pitivi"
+VERSION=0.15.2
+RELEASE=2
+CATEGORY="Video"
+SUMMARY="GStreamer-based video editor"
+DESCRIPTION="PiTiVi is a free and open source video editor based on the
+GStreamer multimedia framework."
+HOMEPAGE="http://www.pitivi.org/"
+
+PATCH_URI="0.13.3-po-destdir.patch"
+
+REQUIRES="gstreamer0.10-plugins-base gstreamer0.10-plugins-gnonlin gstreamer0.10-plugins-good gstreamer0.10-plugins-libpng gstreamer0.10-plugins-vorbis"
+
+DIFF_EXCLUDES="autoregen.sh configure.py"
+
+ACLOCAL_FLAGS="-I common/m4"

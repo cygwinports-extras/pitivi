@@ -1,5 +1,0 @@
-category: Video
-requires: gstreamer0.10-plugins-base gstreamer0.10-plugins-gnonlin gstreamer0.10-plugins-good gstreamer0.10-plugins-libpng gstreamer0.10-plugins-vorbis python python-cairo python-gobject python-goocanvas python-gst0.10 python-gtk2.0 python-numpy python-twisted python-xdg
-sdesc: "GStreamer-based video editor"
-ldesc: "PiTiVi is a free and open source video editor based on the 
-GStreamer multimedia framework."
